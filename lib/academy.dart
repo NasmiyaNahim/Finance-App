@@ -1,3 +1,5 @@
+import 'package:financeapp/buy_sell.dart';
+import 'package:financeapp/home_page.dart';
 import 'package:flutter/material.dart';
 // Import your BuySellPage file here
 
@@ -43,159 +45,195 @@ class AcademyScreen extends StatelessWidget {
          
            Padding(
             padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
-            child: Container(
-              width: double.infinity, // Occupy full width
-              height: 106,
-              decoration: BoxDecoration(
-                color: const Color(0xFF252530),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(width: 24), // Left spacing
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/image 11.png'),
-                        fit: BoxFit.fill,
+            child: GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+              child: Container(
+                width: double.infinity, // Occupy full width
+                height: 106,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF252530),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const SizedBox(width: 24), // Left spacing
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/image 11.png'),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
-                  const Expanded(
-                    child: Text(
-                      'Course 1',
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 24,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 1,
+                    const SizedBox(width: 32), // Increased spacing between image and text
+                    const Expanded(
+                      child: Text(
+                        'Course 1',
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 24,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
-            child: Container(
-              width: double.infinity, // Occupy full width
-              height: 106,
-              decoration: BoxDecoration(
-                color: const Color(0xFF252530),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(width: 24), // Left spacing
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/image 11.png'),
-                        fit: BoxFit.fill,
+            child: GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+              child: Container(
+                width: double.infinity, // Occupy full width
+                height: 106,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF252530),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const SizedBox(width: 24), // Left spacing
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/image 11.png'),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
-                  const Expanded(
-                    child: Text(
-                      'Course 2',
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 24,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 1,
+                    const SizedBox(width: 32), // Increased spacing between image and text
+                    const Expanded(
+                      child: Text(
+                        'Course 2',
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 24,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
          
           Padding(
             padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
-            child: Container(
-              width: double.infinity, // Occupy full width
-              height: 106,
-              decoration: BoxDecoration(
-                color: const Color(0xFF252530),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(width: 24), // Left spacing
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/image 11.png'),
-                        fit: BoxFit.fill,
+            child: GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+              child: Container(
+                width: double.infinity, // Occupy full width
+                height: 106,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF252530),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const SizedBox(width: 24), // Left spacing
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/image 11.png'),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
-                  const Expanded(
-                    child: Text(
-                      'Course 4',
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 24,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 1,
+                    const SizedBox(width: 32), // Increased spacing between image and text
+                    const Expanded(
+                      child: Text(
+                        'Course 4',
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 24,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
          
            Padding(
             padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
-            child: Container(
-              width: double.infinity, // Occupy full width
-              height: 106,
-              decoration: BoxDecoration(
-                color: const Color(0xFF252530),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(width: 24), // Left spacing
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/image 11.png'),
-                        fit: BoxFit.fill,
+            child: GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+              child: Container(
+                width: double.infinity, // Occupy full width
+                height: 106,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF252530),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const SizedBox(width: 24), // Left spacing
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/image 11.png'),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
-                  const Expanded(
-                    child: Text(
-                      'Course 5',
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 24,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 1,
+                    const SizedBox(width: 32), // Increased spacing between image and text
+                    const Expanded(
+                      child: Text(
+                        'Course 5',
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 24,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -227,126 +265,34 @@ class AcademyScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // Wallet
-                Container(
-                  height: double.infinity,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8.png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Wallet',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 36),
-                Container(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8 (1).png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Buy/Sell',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 36),
-                Container(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 10.png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Academy',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 36),
-                // Buy/Sell
-                Container(
-                  height: double.infinity,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8 (2).png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      GestureDetector(
+                GestureDetector(
                         onTap: () {
-                         
-                       
-                        },
-                        child: Text(
-                          'Settings',
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home()),
+                );
+              },
+                  child: Container(
+                    height: double.infinity,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image 8.png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Wallet',
                           style: TextStyle(
                             color: Color(0xFFAAAAAA),
                             fontSize: 12,
@@ -355,8 +301,136 @@ class AcademyScreen extends StatelessWidget {
                             height: 0,
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 36),
+                GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BuySellPage()),
+                );
+              },
+                  child: Container(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image 8 (1).png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Buy/Sell',
+                          style: TextStyle(
+                            color: Color(0xFFAAAAAA),
+                            fontSize: 12,
+                            fontFamily: 'Inter',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 36),
+                GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+                  child: Container(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image 10.png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Academy',
+                          style: TextStyle(
+                            color: Color(0xFFAAAAAA),
+                            fontSize: 12,
+                            fontFamily: 'Inter',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 36),
+                // Buy/Sell
+                GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+                  child: Container(
+                    height: double.infinity,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image 8 (2).png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        GestureDetector(
+                          onTap: () {
+                           
+                         
+                          },
+                          child: Text(
+                            'Settings',
+                            style: TextStyle(
+                              color: Color(0xFFAAAAAA),
+                              fontSize: 12,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                

@@ -1,6 +1,7 @@
 import 'package:financeapp/academy.dart';
 import 'package:financeapp/buy_sell.dart';
 import 'package:financeapp/send.dart';
+import 'package:financeapp/settings.dart';
 
 import 'package:flutter/material.dart';
 
@@ -186,26 +187,35 @@ Row(
               ),
               Positioned(
                 left: 150, // Adjust the left position for increased overlap
-                child: Container(
-                  width: 190,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFF252530),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+                child: GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+                  child: Container(
+                    width: 190,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFF252530),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'NFT',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 14,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 0.09,
+                    child: Center(
+                      child: Text(
+                        'NFT',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 14,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 0.09,
+                        ),
                       ),
                     ),
                   ),
@@ -766,14 +776,23 @@ Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Container(
-                                      width: 24,
-                                      height: 24,
-                                      decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage(
-                                              'assets/images/image 8 (2).png'),
-                                          fit: BoxFit.fill,
+                                    GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                );
+              },
+                                      child: Container(
+                                        width: 24,
+                                        height: 24,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/images/image 8 (2).png'),
+                                            fit: BoxFit.fill,
+                                          ),
                                         ),
                                       ),
                                     ),
