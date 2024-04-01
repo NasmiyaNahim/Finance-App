@@ -1,3 +1,4 @@
+import 'package:financeapp/home_page.dart';
 import 'package:flutter/material.dart';
 
 class ReceiveScreen extends StatelessWidget {
@@ -10,7 +11,14 @@ class ReceiveScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(
-          icon: Image.asset('assets/images/Frame 6 (1).png'),
+           icon: GestureDetector(
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home()),
+                );
+              },child: Image.asset('assets/images/Frame 5.png')),
           onPressed: () {},
         ),
         title: const Text(
@@ -29,7 +37,7 @@ class ReceiveScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Image.asset(
-              "assets/images/Coin (1).png",
+              "assets/images/Logo.png",
               width: 64,
               height: 64,
             ),
@@ -48,7 +56,7 @@ class ReceiveScreen extends StatelessWidget {
               height: 280,
               color: Colors.white,
               child: Image.asset(
-                "assets/images/QR Code (1).png",
+                "assets/images/QR Code.png",
                 width: 486,
                 height: 386,
               ),

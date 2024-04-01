@@ -1,4 +1,6 @@
+import 'package:financeapp/home_page.dart';
 import 'package:flutter/material.dart';
+
 class Swap extends StatelessWidget {
   const Swap({Key? key}) : super(key: key);
   @override
@@ -8,14 +10,22 @@ class Swap extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF17171F),
         leading: IconButton(
-          icon: Image.asset('assets/images/Frame 7.png'),
+          icon: GestureDetector(
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home()),
+                );
+              },
+              child: Image.asset('assets/images/Frame 5.png')),
           onPressed: () {
             // Add your onPressed action here
           },
         ),
         title: const Padding(
           padding: EdgeInsets.only(left: 100),
-          child:  Text(
+          child: Text(
             'Swap',
             style: TextStyle(
               color: Color(0xFFAAAAAA),
@@ -67,7 +77,7 @@ class Swap extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10), 
+            const SizedBox(height: 10),
             Container(
               width: 380,
               height: 68,
@@ -95,7 +105,7 @@ class Swap extends StatelessWidget {
                         ),
                       ),
                       child: Image.asset(
-                        'assets/images/arrow.png',
+                        'assets/images/image 2.png',
                         width: 19,
                         height: 19,
                       ),
@@ -145,7 +155,7 @@ class Swap extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding:  EdgeInsets.only(left: 10),
+                        padding: EdgeInsets.only(left: 10),
                         child: Text(
                           '\$270.61',
                           style: TextStyle(
@@ -233,7 +243,7 @@ class Swap extends StatelessWidget {
                             ),
                           ),
                           child: Image.asset(
-                            'assets/images/bitcoin.png',
+                            'assets/images/Logo.png',
                             width: 19,
                             height: 19,
                           ),
@@ -283,7 +293,7 @@ class Swap extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding:  EdgeInsets.only(left: 35),
+                            padding: EdgeInsets.only(left: 35),
                             child: Text(
                               '\$270.61',
                               style: TextStyle(
