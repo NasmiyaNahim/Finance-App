@@ -1,6 +1,7 @@
 import 'package:financeapp/academy.dart';
 import 'package:financeapp/buy_sell.dart';
 import 'package:financeapp/coin_info.dart';
+import 'package:financeapp/comming_soon.dart';
 import 'package:financeapp/receive.dart';
 import 'package:financeapp/send.dart';
 import 'package:financeapp/settings.dart';
@@ -195,7 +196,7 @@ Row(
                 // Navigate to BuySellPage when tapped
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                  MaterialPageRoute(builder: (context) => comingsoon()),
                 );
               },
                   child: Container(
@@ -245,7 +246,7 @@ Row(
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Swap()),
+                                      builder: (context) => const CoininfoScreen()),
                                 );
                               },
                   child: Container(
@@ -673,26 +674,44 @@ Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Container(
-                                        width: 24,
-                                        height: 24,
-                                        decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                                'assets/images/image 8.png'),
-                                            fit: BoxFit.fill,
+                                      GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>Home()),
+                );
+              },
+                                        child: Container(
+                                          width: 24,
+                                          height: 24,
+                                          decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                              image: AssetImage(
+                                                  'assets/images/image 8.png'),
+                                              fit: BoxFit.fill,
+                                            ),
                                           ),
                                         ),
                                       ),
                                       const SizedBox(height: 4),
-                                      const Text(
-                                        'Wallet',
-                                        style: TextStyle(
-                                          color: Color(0xFFAAAAAA),
-                                          fontSize: 12,
-                                          fontFamily: 'Inter',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0,
+                                      GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home()),
+                );
+              },
+                                        child: const Text(
+                                          'Wallet',
+                                          style: TextStyle(
+                                            color: Color(0xFFAAAAAA),
+                                            fontSize: 12,
+                                            fontFamily: 'Inter',
+                                            fontWeight: FontWeight.w400,
+                                            height: 0,
+                                          ),
                                         ),
                                       ),
                                     ],

@@ -1,5 +1,6 @@
 import 'package:financeapp/buy_sell.dart';
 import 'package:financeapp/home_page.dart';
+import 'package:financeapp/settings.dart';
 import 'package:flutter/material.dart';
 // Import your BuySellPage file here
 
@@ -392,7 +393,7 @@ class AcademyScreen extends StatelessWidget {
                 // Navigate to BuySellPage when tapped
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
                 );
               },
                   child: Container(
