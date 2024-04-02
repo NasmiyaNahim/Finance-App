@@ -1,9 +1,9 @@
-//import 'package:financeapp/ComingSoon.dart';
+
 import 'package:financeapp/academy.dart';
 import 'package:financeapp/buy_sell.dart';
-//import 'package:financeapp/buysell.dart';
+
 import 'package:financeapp/comming_soon.dart';
-//import 'package:financeapp/home.dart';
+
 import 'package:financeapp/home_page.dart';
 import 'package:flutter/material.dart';
 class SettingsPage extends StatelessWidget {

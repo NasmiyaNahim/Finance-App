@@ -1,10 +1,9 @@
-//import 'package:finance/settins.dart';
+
 import 'package:financeapp/academy.dart';
 import 'package:financeapp/home_page.dart';
 import 'package:financeapp/settings.dart';
 import 'package:flutter/material.dart';
-//import 'package:finance/academy.dart';
-//import 'package:finance/home.dart';
+
 
 class BuySellPage extends StatelessWidget {
   const BuySellPage({Key? key}) : super(key: key);
